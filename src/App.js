@@ -5,6 +5,7 @@ import RemoteDataMentionsEditor from "./editor/plugins/mentions/mentions.remoted
 import LinkifyEditor from "./editor/plugins/linkify/linkify";
 import HashtagEditor from "./editor/plugins/hashtag/hashtag";
 import ImageEditor from "./editor/plugins/image/image";
+import VideoEditor from "./editor/plugins/video/video";
 import "./App.css";
 import "@draft-js-plugins/mention/lib/plugin.css";
 import "@draft-js-plugins/hashtag/lib/plugin.css";
@@ -18,6 +19,7 @@ const App = () => {
       <LinkifyEditor />
       <HashtagEditor />
       <ImageEditor />
+      <VideoEditor/>
     </>
   );
 };
