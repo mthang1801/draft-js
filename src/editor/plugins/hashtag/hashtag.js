@@ -14,7 +14,7 @@ const Hashtag = () => {
   }
   return (
     <div className="wrapper">
-      <h2>Draftjs HashTag</h2>
+      <h2 style={{color:"#5e35b1"}}>Draftjs HashTag</h2>
       <Editor 
         editorState={editorState}
         onChange={onChange}

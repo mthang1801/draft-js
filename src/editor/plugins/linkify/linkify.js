@@ -11,7 +11,7 @@ const Linkify = () => {
 
   return (
     <div className="wrapper">
-      <h2>Draftjs Linkify</h2>
+      <h2 style={{color:"#43a047"}}>Draftjs Linkify</h2>
       <Editor
         editorState={editorState}
         onChange={setEditorState}

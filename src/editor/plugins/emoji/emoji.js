@@ -20,7 +20,7 @@ const Emoji = () => {
   }
   return (
     <div className="wrapper">
-      <h2>Draft.js Emoji</h2>
+      <h2 style={{color:"#00897b"}}>Draft.js Emoji</h2>
       <Editor
         editorState={editorState}
         plugins={[emojiPlugin]}

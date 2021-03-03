@@ -39,7 +39,7 @@ export default function SimpleMentionEditor() {
     <div        
     className="wrapper"
     >
-      <h2>Draftjs Mention Basic</h2>
+      <h2 style={{color: "#fdd835"}}>Draftjs Mention Basic</h2>
       <Editor
         editorKey={'editor'}
         editorState={editorState}

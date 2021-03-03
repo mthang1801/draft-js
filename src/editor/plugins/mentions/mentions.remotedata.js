@@ -28,10 +28,10 @@ const MentionsRemoteData = () => {
       .then((response) => response.json())
       .then((json) => setSuggestions(json));
   });
-  console.log(open);
+ 
   return (
     <div className="wrapper">
-      <h2>DraftJS mention data remote</h2>
+      <h2 style={{color:"#c0ca33"}}>DraftJS mention data remote</h2>
       <Editor
         editorState={editorState}
         editorKey={"editor"}

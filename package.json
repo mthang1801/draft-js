@@ -6,6 +6,7 @@
     "@draft-js-plugins/editor": "^4.1.0",
     "@draft-js-plugins/emoji": "^4.2.0",
     "@draft-js-plugins/hashtag": "^4.1.0",
+    "@draft-js-plugins/image": "^4.1.0",
     "@draft-js-plugins/linkify": "^4.1.0",
     "@draft-js-plugins/mention": "^4.3.0",
     "@testing-library/jest-dom": "^5.11.9",
