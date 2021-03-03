@@ -1,0 +1,24 @@
+import React, { useState } from "react";
+import { EditorState } from "draft-js";
+import Editor from "@draft-js-plugins/editor";
+import createLinkifyPlugin from "@draft-js-plugins/linkify";
+
+const Linkify = () => {
+  const [editorState, setEditorState] = useState(() =>
+    EditorState.createEmpty()
+  );
+  const linkifyPlugin = createLinkifyPlugin();
+
+  return (
+    <div className="wrapper">
+      <h2>Draftjs Linkify</h2>
+      <Editor
+        editorState={editorState}
+        onChange={setEditorState}
+        plugins={[linkifyPlugin]}
+      />
+    </div>
+  );
+};
+
+export default Linkify;
