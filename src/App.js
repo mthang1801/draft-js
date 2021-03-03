@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import EmojiEditor from "./editor/plugins/emoji/emoji"
+import BasicMentionEditor from "./editor/plugins/mentions/mention.basic"
+import RemoteDataMentions from "./editor/plugins/mentions/mentions.remotedata"
+import "./App.css";
+import '@draft-js-plugins/mention/lib/plugin.css';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <EmojiEditor/>
+    <BasicMentionEditor/>
+    <RemoteDataMentions/>
+    </>
+  )
 }
 
-export default App;
+export default App
