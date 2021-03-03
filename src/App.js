@@ -1,4 +1,5 @@
 import React from "react";
+import RichTextEditor from "./editor/rich-text/richtTextEditorWysiwyg"
 import EmojiEditor from "./editor/plugins/emoji/emoji";
 import BasicMentionEditor from "./editor/plugins/mentions/mention.basic";
 import RemoteDataMentionsEditor from "./editor/plugins/mentions/mentions.remotedata";
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Draftjs Demo Example</h1>
+      <RichTextEditor/>
       <EmojiEditor />
       <BasicMentionEditor />
       <RemoteDataMentionsEditor />
